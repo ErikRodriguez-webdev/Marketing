@@ -2,17 +2,10 @@
 header {
   .center(space-between, center);
   background: black;
-  border: 0px solid red;
   padding: 0% 2%;
 
-  nav {
-    .center(space-between, none);
-    width: 115px;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
+  @media @phone {
+    flex-direction: column;
   }
 
   .headerName {
@@ -20,12 +13,41 @@ header {
       color: white;
     }
   }
+}
 
-  .loginLink {
-    .button(green, 5px);
-    a {
-      color: white;
-      text-decoration: none;
+nav {
+  .center(space-between, none);
+  width: 115px;
+
+  @media @phone {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    @media @phone {
+      .push(1%, 1%);
+      width: 100%;
+      border-top: 1px solid white;
     }
+  }
+}
+
+.loginLink {
+  .button(green, 4.5px);
+
+  @media @phone {
+    .push(2%, 2%);
+    width: 20%;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 }

@@ -15,6 +15,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+
+    @media @phone {
+      display: none;
+    }
   }
 }
 
@@ -25,25 +29,60 @@
   .topHomeBox {
     .center(center, center);
 
+    .imageBC {
+      @media @phone {
+        display: none;
+      }
+    }
+
     .textBC {
-      width: 40%;
+      width: 30%;
       margin: 3%;
+
+      @media @phone {
+        text-align: center;
+        width: 75%;
+      }
     }
   }
 }
 
 .homeContentWrap {
-  padding: 2% 8%;
+  padding: 3% 8%;
   margin: 0 auto;
 
   .homeFormat {
     .center(space-evenly, none);
     background: white;
     padding: 1%;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    @media @tablet {
+      flex-direction: column;
+      width: 75%;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      width: 95%;
+    }
 
     .homeBoxes {
       width: 25%;
       text-align: center;
+
+      @media @tablet {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1%;
+      }
+
+      @media @phone {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1%;
+      }
     }
   }
 

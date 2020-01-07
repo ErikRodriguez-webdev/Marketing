@@ -21,6 +21,11 @@ h3 {
 h4 {
   font-size: 1.8rem;
 }
+@media (max-width: 1000px) {
+  h4 {
+    font-size: 1.6rem;
+  }
+}
 p {
   font-size: 2rem;
   font-family: "Assistant", sans-serif;
@@ -32,6 +37,11 @@ hr {
   border-bottom-color: black;
   border-bottom-width: 25px;
   border-bottom-style: solid;
+}
+@media (max-width: 500px) {
+  hr {
+    display: none;
+  }
 }
 body {
   background-color: #ffffff;
@@ -63,32 +73,59 @@ header {
   justify-content: space-between;
   align-items: center;
   background: black;
-  border: 0px solid red;
   padding: 0% 2%;
 }
-header nav {
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header .headerName h1 {
+  color: white;
+}
+nav {
   display: flex;
   justify-content: space-between;
   align-items: none;
   width: 115px;
 }
-header nav a {
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav a {
   color: white;
   text-decoration: none;
 }
-header .headerName h1 {
-  color: white;
+@media (max-width: 500px) {
+  nav a {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    border-top: 1px solid white;
+  }
 }
-header .loginLink {
+.loginLink {
   border: 1px solid white;
   background: green;
   padding: 4px 15px;
-  border-radius: 5px;
+  border-radius: 4.5px;
 }
-header .loginLink:hover {
+.loginLink:hover {
   background-color: #00e600;
 }
-header .loginLink a {
+@media (max-width: 500px) {
+  .loginLink {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 20%;
+    text-align: center;
+  }
+}
+.loginLink a {
   color: white;
   text-decoration: none;
 }
@@ -112,6 +149,11 @@ header .loginLink a {
   transform: translate(-50%, -50%);
   color: white;
 }
+@media (max-width: 500px) {
+  .hero .heroText {
+    display: none;
+  }
+}
 .topBoxContent {
   padding: 2% 2%;
   margin: 0 auto;
@@ -121,12 +163,23 @@ header .loginLink a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .topBoxContent .topHomeBox .imageBC {
+    display: none;
+  }
+}
 .topBoxContent .topHomeBox .textBC {
-  width: 40%;
+  width: 30%;
   margin: 3%;
 }
+@media (max-width: 500px) {
+  .topBoxContent .topHomeBox .textBC {
+    text-align: center;
+    width: 75%;
+  }
+}
 .homeContentWrap {
-  padding: 2% 8%;
+  padding: 3% 8%;
   margin: 0 auto;
 }
 .homeContentWrap .homeFormat {
@@ -135,10 +188,38 @@ header .loginLink a {
   align-items: none;
   background: white;
   padding: 1%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .homeContentWrap .homeFormat {
+    flex-direction: column;
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .homeContentWrap .homeFormat {
+    flex-direction: column;
+    width: 95%;
+  }
 }
 .homeContentWrap .homeFormat .homeBoxes {
   width: 25%;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .homeContentWrap .homeFormat .homeBoxes {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .homeContentWrap .homeFormat .homeBoxes {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+  }
 }
 .homeContentWrap .socialMedia {
   display: flex;
