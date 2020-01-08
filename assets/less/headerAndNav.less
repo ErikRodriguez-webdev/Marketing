@@ -4,32 +4,40 @@ header {
   background: black;
   padding: 0% 2%;
 
-  @media @phone {
+  @media @tablet {
     flex-direction: column;
   }
 
-  .headerName {
+  .logo {
     h1 {
       color: white;
+    }
+  }
+  .links{
+    .center(space-around, none);
+    
+    @media @tablet {
+      flex-direction: column;
+      margin-bottom:5%;
     }
   }
 }
 
 nav {
-  .center(space-between, none);
-  width: 115px;
-
-  @media @phone {
+  
+  width: 750px;
+  @media @tablet {
     flex-direction: column;
     text-align: center;
     width: 100%;
   }
-
   a {
+    font-size:4.5rem;
+    
     color: white;
     text-decoration: none;
 
-    @media @phone {
+    @media @tablet {
       .push(1%, 1%);
       width: 100%;
       border-top: 1px solid white;
@@ -38,11 +46,15 @@ nav {
 }
 
 .loginLink {
+  @media @tablet {
+    width:50%;
+   margin-left:25%;
+  }
   .button(green, 4.5px);
-
+  
   @media @phone {
     .push(2%, 2%);
-    width: 20%;
+    width:;
     text-align: center;
   }
 

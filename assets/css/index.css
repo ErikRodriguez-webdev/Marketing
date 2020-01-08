@@ -75,21 +75,29 @@ header {
   background: black;
   padding: 0% 2%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   header {
     flex-direction: column;
   }
 }
-header .headerName h1 {
+header .logo h1 {
   color: white;
 }
-nav {
+header .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: none;
-  width: 115px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  header .links {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+}
+nav {
+  width: 750px;
+}
+@media (max-width: 1000px) {
   nav {
     flex-direction: column;
     text-align: center;
@@ -97,10 +105,11 @@ nav {
   }
 }
 nav a {
+  font-size: 4.5rem;
   color: white;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   nav a {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -114,6 +123,12 @@ nav a {
   padding: 4px 15px;
   border-radius: 4.5px;
 }
+@media (max-width: 1000px) {
+  .loginLink {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 .loginLink:hover {
   background-color: #00e600;
 }
@@ -121,7 +136,7 @@ nav a {
   .loginLink {
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 20%;
+    width: ;
     text-align: center;
   }
 }
@@ -163,11 +178,6 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .topBoxContent .topHomeBox .imageBC {
-    display: none;
-  }
-}
 .topBoxContent .topHomeBox .textBC {
   width: 30%;
   margin: 3%;
@@ -176,6 +186,11 @@ nav a {
   .topBoxContent .topHomeBox .textBC {
     text-align: center;
     width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .topBoxContent .topHomeBox .imageBC {
+    display: none;
   }
 }
 .homeContentWrap {
@@ -245,4 +260,74 @@ footer {
   margin-top: 1%;
   margin-bottom: 1%;
   color: white;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 10%;
+    text-align: center;
+    border-top: 2px solid black;
+  }
+}
+.footer-wrapper {
+  border-top: 2px solid black;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-wrapper .footer-about {
+  margin-top: 5%;
+  width: 33%;
+}
+@media (max-width: 1000px) {
+  .footer-wrapper .footer-about {
+    width: 100%;
+  }
+}
+.footer-wrapper .footer-about h4 {
+  border-bottom: 2px solid #09dd09;
+  padding: 1%;
+  font-size: 2.5rem;
+}
+.footer-wrapper .footer-about p {
+  margin-top: 1%;
+  line-height: 200%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+.footer-wrapper .explore-footer {
+  text-align: center;
+  margin-top: 5%;
+}
+@media (max-width: 1000px) {
+  .footer-wrapper .explore-footer {
+    width: 100%;
+  }
+}
+.footer-wrapper .explore-footer h4 {
+  padding: 1%;
+  border-bottom: 2px solid #09dd09;
+  font-size: 2.5rem;
+}
+.footer-wrapper .explore-footer ul {
+  list-style-type: none;
+}
+.footer-wrapper .explore-footer li {
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+.footer-wrapper .explore-footer li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-wrapper .explore-footer li a:hover {
+  color: #09dd09;
 }
