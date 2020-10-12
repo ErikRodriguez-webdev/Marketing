@@ -16,10 +16,10 @@ Marketing - HTML | CSS | Less
 ## API Reference
 
 API for strains
-https://rapidapi.com/raygorodskij/api/Strain
-https://otreeba.com/ (needs key)
-https://kushyapp.github.io/kushy-api-docs/public/
-Kaggle Dataset (both versions)
+- https://rapidapi.com/raygorodskij/api/Strain
+- https://otreeba.com/ (needs key)
+- https://kushyapp.github.io/kushy-api-docs/public/
+- Kaggle Dataset (both versions)
 
 ## License
 MIT © [Medical Cabinet]()
