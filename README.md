@@ -9,6 +9,7 @@ Project exists because patients are unable to find proper cannabis strain, dosag
 
 ## Code style
 [![js-standard-style](https://img.shields.io/badge/HTML-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/CSS-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # Tech/framework used
 Marketing - HTML | CSS | Less
